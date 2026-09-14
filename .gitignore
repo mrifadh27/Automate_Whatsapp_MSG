@@ -1,0 +1,20 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+venv/
+env/
+ENV/
+
+# Chrome user profile cache
+whatsapp_profile/
+
+# OS and IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

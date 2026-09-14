@@ -18,11 +18,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 # ================= Configuration =================
-GROUP_NAME = "T²⁰ Ō/L Bloods ❤️"
-SEARCH_KEYWORD = "Bloods"
-MESSAGE = "Hi Guys"
-COUNT = 100
-DELAY = 0.1 # Delay between messages in seconds
+GROUP_NAME = "THE BOYS 🗿"
+SEARCH_KEYWORD = "BOYS"
+MESSAGE = "*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************"
+COUNT = 500
+DELAY = 0.1  # Delay between messages in seconds
 
 PROFILE_DIR = os.path.abspath("./whatsapp_profile")
 # =================================================
@@ -69,8 +69,8 @@ try:
     # 1. Check if the group is already visible in the recent chat list
     group_xpath = (
         f'//span[@title="{GROUP_NAME}"] | '
-        f'//span[contains(@title, "Bloods")] | '
-        f'//span[contains(text(), "Bloods")]'
+        f'//span[contains(@title, "{SEARCH_KEYWORD}")] | '
+        f'//span[contains(text(), "{SEARCH_KEYWORD}")]'
     )
     chats = driver.find_elements(By.XPATH, group_xpath)
 
